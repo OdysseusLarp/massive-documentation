@@ -8,7 +8,7 @@ based on a ready document.
 
 As an example, for the Odysseus larp, a 900-page engineering manual was
 produced based on the [Apollo Operations Handbook](https://www.hq.nasa.gov/alsj/alsj-CSMdocs.html).
-A few pages are in the file `example.pdf`.
+A few pages are in the file [example.pdf](example.pdf).
 
 
 ## Prerequisites
@@ -43,7 +43,7 @@ A few pages are in the file `example.pdf`.
    `WIDTH=$(($HEIGHT*210/297))` to `WIDTH=$(($HEIGHT*2159/2794))`.
 
 7. Create an overlay image that blocks the necessary parts of the pages and
-   replaces them with your own (e.g. ess-odysseus-overlay.png).
+   replaces them with your own (e.g. [ess-odysseus-overlay.png](ess-odysseus-overlay.png).
    (For the Apollo Operations Handbook "Rockwell" font was suitably close.)
 
 8. Overlay the image on top of all pages:  
