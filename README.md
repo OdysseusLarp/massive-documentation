@@ -37,7 +37,7 @@ A few pages are in the file [example.pdf](example.pdf).
 
 6. Convert all images to the proper image size:  
    `mkdir faulty`  
-   `./resize-to-a4.sh 1600 faulty`  
+   `./resize-to-a4.sh 1600 faulty *.png`
    Images not of correct size are moved to faulty/ (check them out, they may be cool).
    If you want letter size, edit the script and change
    `WIDTH=$(($HEIGHT*210/297))` to `WIDTH=$(($HEIGHT*2159/2794))`.
@@ -56,3 +56,10 @@ A few pages are in the file [example.pdf](example.pdf).
     `img2pdf *.png -o output.pdf --pagesize A4`
 
 Enjoy!
+
+
+## Templates
+
+The `templates/` directory contains HTML and ODT templates with the header and footer in place for creating custom documentation pages.
+
+Download the [Rockwell font](https://www.wfonts.com/font/rockwell) and install it (for ODT to work) *and* place is in `templates/rockwell.ttf` (for HTML to work).
