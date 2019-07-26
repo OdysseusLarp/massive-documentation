@@ -3,3 +3,4 @@ pdfs/
 tmp/
 output/
 templates/*.ttf
+node_modules/

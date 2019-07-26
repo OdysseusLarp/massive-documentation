@@ -1,0 +1,49 @@
+{
+	"name": "spaceship-documentation",
+	"version": "0.0.1",
+	"description": "Massive documentation generation ================================",
+	"main": "index.js",
+	"scripts": {
+		"generateReactorDocs": "babel-node src/generateReactorDocs.js > reactor.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OdysseusLarp/massive-documentation.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/OdysseusLarp/massive-documentation/issues"
+	},
+	"homepage": "https://github.com/OdysseusLarp/massive-documentation#readme",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-eslint": "^8.2.6",
+		"babel-plugin-istanbul": "^4.1.6",
+		"babel-plugin-syntax-decorators": "^6.13.0",
+		"babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-plugin-transform-strict-mode": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1"
+	},
+	"babel": {
+		"sourceMaps": "inline",
+		"presets": [
+			"stage-0"
+		],
+		"plugins": [
+			"babel-plugin-syntax-decorators",
+			"babel-plugin-transform-strict-mode",
+			"babel-plugin-transform-es2015-modules-commonjs",
+			"babel-plugin-transform-object-rest-spread"
+		],
+		"env": {
+			"test": {
+				"plugins": [
+					"rewire",
+					"istanbul"
+				]
+			}
+		}
+	}
+}
